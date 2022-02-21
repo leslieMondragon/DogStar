@@ -1,5 +1,5 @@
 ![Alt StarDogLogo](/assets/LogoNav.png)
- # STARDOG  |   ADIESTRAMIENTO CANINO
+ # DOGSTAR |   ADIESTRAMIENTO CANINO
 Proyecto presentado para el curso de JavaScript impartido por "CoderHouse".
 
 ## Concepto
