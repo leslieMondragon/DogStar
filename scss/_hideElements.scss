@@ -1,0 +1,39 @@
+@import "colors";
+
+$hide: none;
+
+#registerTableA {
+  display: $hide;
+}
+
+#registerTableB {
+  display: $hide;
+}
+
+#cartTable {
+  display: none;
+}
+
+#sucess {
+  height: 50%;
+  background-color: $blue;
+  padding: 50px 20px;
+  font-size: 3vw;
+  color: honeydew;
+  margin: 65px 55px;
+  border-radius: 10px;
+  display: $hide;
+}
+
+#waitLogo {
+  display: $hide;
+  height: 600px;
+}
+
+#dogsInfo {
+  margin-bottom: 100px;
+}
+
+#load{
+  display: $hide;
+}

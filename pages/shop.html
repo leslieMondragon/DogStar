@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Adiestramiento Canino</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="pageTop">
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand m-2" href="../index.html"><img src="../assets/LogoNav.png" alt="Logo DogStar"
+                    class="pb-2"></a>
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="h4">DogStar</h1>
+            </a>
+            <button class="navbarToggler navbarToggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbarTogglerIcon"></span></button>
+            <div class="collapse navbarCollapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="navLink" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="navLink" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="navLink" href="#cartTable"><i class="bi bi-cart4"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="masthead shopBg mt-resp-BG">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Bienvenido a la tienda en línea.</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Aquí encontrarás diversidad de accesorios para tus amigos
+                        caninos,además de muchas ideas para hacerles un buen regalo, porque se lo merecen..</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Productos</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SHOP -->
+    <section class="bg-primary pt-5" id="about">
+        <div>
+            <h1>Nuestros Productos</h1>
+        </div>
+
+
+        <!-- TABLE TEMPLATE -->
+        <template id="addToCart" class="table-responsive-sm">
+            <tr>
+                <td id="product"></td>
+                <td><button id="menos-cantidad" class="button indDec">-</button><span id="cant">1</span><button
+                        id='mas-cantidad' class="button indDec">+</button></td>
+                <td class="tablePrices" id="itemPrice"></td>
+
+            </tr>
+        </template>
+        <!-- FOOTER TABLE TEMPLATE -->
+        <template id="tfooter">
+            <tr class="none">
+                <td colspan="2"></td>
+                <td id="totalPay" class="tablePrices  font-weight-bold"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><a class="action-button shadow animate red" href="./payPage.html">Pagar</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="border-bottom-left"></td>
+                <td class="border-bottom-right"><button id="dropCartItems">Vaciar</button></td>
+            </tr>
+        </template>
+
+        <!-- ITEMS CARDS FROM JS-->
+        <div class="productContainer">
+
+        </div>
+
+        <!-- ITEM TEMPLATE -->
+        <template id="prodTemplate">
+            <article class="cartola mb-5">
+                <!-- ITEM IMAGE -->
+                <div class="imageContainer">
+                    <img src="" alt="">
+                </div>
+                <!-- ITEM NAME AND DESCRIPTION -->
+                <div class="divInfo">
+                    <h2 class="itemName">Nombre Producto</h2>
+                    <hr class="divider">
+                    <p class="itemDescription">Descripción producto</p>
+                </div>
+                <!-- PRICE AND ADD TO CART -->
+                <div class="divPriceButton">
+                    <p class="price">precio Producto</p>
+                    <button class="boton addToCartButton">Agregar</button>
+                </div>
+            </article>
+        </template>
+
+
+        <!-- ITEMS CART -->
+        <div id="cartTable">
+            <h1 class="mt-5" id="cart">Productos en el carrito</h1>
+            <div class="calcTable" id="calcTable">
+
+                <table class="tabla">
+
+                    <thead class="cartHdr border-top-right">
+                        <tr>
+                            <th class="border-top-left">Nombre Producto</th>
+                            <th>Cantidad</th>
+                            <th class="border-top-right">Precio Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartBody">
+
+                    </tbody>
+                    <tfoot id="footer">
+                        <tr>
+                            <td class="border-bottom-left border-bottom-right" colspan=3>¡No hay ningun elemento en el
+                                carritot!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <!-- END SHOP -->
+
+
+        <!-- CONTACT INFO -->
+        <section id="contact " class="mt-5 contactShop pt-5">
+            <h2 class="text-center mt-xxl-5 mb-xxl-5">Ven a visitarnos!</h2>
+            <hr class="divider" />
+            <div class="text-center">
+                <h4><strong> Horarios:</strong></h4>
+                <ul class="list-unstyled mb-4">
+                    <li><span class="blue"> Lunes a Viernes</span> de 7am a 9pm.</li>
+                    <li><span class="blue"> Sabados</span> de 9am a 6pm.</li>
+                    <li><span class="blue"> Domingos</span> de 10am a 3pm. </li>
+                </ul>
+            </div>
+            <div class="text-center mt-5  pb-3 grid">
+                <i class="bi bi-geo-alt orng text-center"></i>
+                <p class="text-center">Hernán Cortes 160, Lomas de Chapultepec, Miguel Hidalgo, 11100 Ciudad de México,
+                    CDMX</p>
+            </div>
+            <iframe class="w-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9369093587197!2d-99.21476628475503!3d19.415131746269203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20192d0e33d09%3A0x679a2bad1284ae9f!2sHern%C3%A1n%20Cortes%20160%2C%20Lomas%20de%20Chapultepec%2C%20Miguel%20Hidalgo%2C%2011100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1644707482723!5m2!1ses-419!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </section>
+
+
+        <!-- FOOTER-->
+        <footer class="bg-light py-5 text-center">
+            <div class="container px-4 px-lg-5">
+                <a href="https://web.whatsapp.com" target="_blank" class="h5 m-2"><i class="bi bi-whatsapp"></i></a>
+                <a href="http://facebook.com" target="_blank" class="h5 m-2"><i class="bi bi-facebook"></i></a>
+                <a href="http://instagram.com" target="_blank" class="h5 m-2"><i class="bi bi-instagram"></i></a>
+                <div class="small text-center text-muted m-3">+52 55 6445 8079</div>
+                <div class="small text-center text-muted">Copyright &copy; 2022 - DogStar</div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/main.js"></script>
+        <script src="../js/shop.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

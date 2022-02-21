@@ -1,0 +1,34 @@
+@import "colors";
+
+.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  
+  .contactShop{
+    background-color: $lgray !important;
+  }
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 2.25rem;
+  }
+
+  .indexBg {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/bg/bg-masthead.jpg");
+  }
+  
+  .shopBg {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/bg/bg-masthead2.jpg");
+  }
+
+  .registerBg{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('../assets/bg/formbg.jpg') no-repeat center center fixed;
+  }
+
+  .payBg{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('../assets/bg/pawBg.jpg') no-repeat center center fixed;
+  }

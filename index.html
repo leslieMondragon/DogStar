@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>DogStar | Adiestramiento Canino</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="pageTop">
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand m-2" href="#pageTop"><img src="./assets/LogoNav.png" alt="Logo DogStar"
+                    class="pb-2"></a>
+            <a class="navbar-brand" href="#pageTop">
+                <h1 class="h4 m-0">DogStar</h1>
+            </a>
+            <button class="navbarToggler navbarToggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbarTogglerIcon"></span></button>
+            <div class="collapse navbarCollapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <!-- SERVICES DROP DOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle navLink" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" data-toggle="modal" data-target="#eduModal">Adiestramiento</a>
+                            </li>
+                            <li><a class="dropdown-item" data-toggle="modal" data-target="#pensionModal">Pensión</a>
+                            </li>
+                            <li><a class="dropdown-item" data-toggle="modal" data-target="#careModal">Guardería</a></li>
+                            <li><a class="dropdown-item" data-toggle="modal" data-target="#estheticModal">Estetica</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#services">Ver todos</a></li>
+                        </ul>
+                    </li> <!--  END SERVICES DROP DOWN -->
+                    <li class="nav-item"><a class="navLink" href="#portfolio">Galeria</a></li>
+                    <li class="nav-item"><a class="navLink" href="./pages/shop.html">Tienda</a></li>
+                    <li class="nav-item"><a class="navLink" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MASTHEAD-->
+    <header class="masthead indexBg ">
+        <div class="container px-4 px-lg-5 h-100 mt-resp-BG">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">El entrenamiento en conjunto hace la vida más fácil.</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Construya un vínculo de por vida con su perro a través de clases
+                        divertidas y positivas.</p>
+                    <a class="btn btn-primary btn-xl" href="#about">Saber Más</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT INFO-->
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Construya un vínculo de por vida con su perro a través de clases
+                        divertidas y positivas.</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">El entrenamiento adecuado es esencial para una relación larga, feliz y
+                        segura con su perro, sentando las bases para garantizar que su cachorro se mantenga
+                        <strong>físicamente
+                            en forma, mentalmente alerta, comprometido socialmente y emocionalmente feliz. </strong>
+                        Para que el
+                        entrenamiento del perro sea una actividad entretenida y gratificante, nuestro enfoque es
+                        positivo, basado en recompensas, divertido y eficaz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES-->
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Nuestros Servicios</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <!-- SERVICE 1 -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5 h-75">
+                        <div class="mb-2"><i class="bi bi-house fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Pensión</h3>
+                        <p class="text-muted mb-0">Ideal para cuanto tienes que viajar, tu mascota se queda en casa de
+                            un cuidador amoroso.</p>
+                    </div>
+                    <!-- MODAL BUTTON -->
+                    <button type="button" class="btn btn-primary services" data-toggle="modal"
+                        data-target="#pensionModal">
+                        Saber más
+                    </button>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="pensionModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Pensión Canina</h5>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <img src="./assets/LogoMod.png" class="img-fluid" alt="DogStar Logo">
+                                        <div class="row">
+                                            <div class=" lead ml-auto ">
+                                                <h2>Si no lo puedes llevar contigo... <br>
+                                                    <strong> ¡con nosotros puede vacacionar!</strong></h2>
+                                            </div>
+                                        </div>
+                                        <div class="row float-none">
+                                            <div class="ml-auto mt-3">
+                                                <p class="blue float-none">Con nuestro servicio de pensión para perros
+                                                    se la va a
+                                                    pasar muy bien <strong> jugando y divirtiéndose</strong> mientras tú
+                                                    no estás. </p>
+                                                <p class="float-none">Tomará sus alimentos a las horas acostumbradas y
+                                                    pasará la mayor
+                                                    parte del día en el jardín <strong> socializando con otros perros
+                                                    </strong>compatibles en temperamento. </p>
+                                                <p class="text-center mt-0">En la noche descansará en un amplio
+                                                    dormitorio en una cómoda cama
+                                                    <strong> sin pasar frío</strong>, por que los cuartos son térmicos.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mt-5">
+                                                <div class="row">
+                                                    <div class="col-8 col-sm-6">
+                                                        <div>
+                                                            <h4 class="orng">Requisitos</h4>
+                                                            <ul class="list-unstyled mb-4">
+                                                                <li>Mínimo 4 meses de edad</li>
+                                                                <li>Cartilla de vacunación vigente</li>
+                                                                <li>Desparasitación</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 col-sm-6 ">
+                                                        <div>
+                                                            <h4 class="orng">Restricciones</h4>
+                                                            <p class="float-none"><strong>No</strong> perros agresivos.
+                                                                <br><strong>No</strong> perros enfermos.</p>
+                                                            <br class="mt-3">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="galeriaModal list-unstyled d-flex justify-content-center">
+                                                <li><img class="img-fluid" src="./assets/img/Pension/1.jfif"
+                                                        alt="DogStar Pension img">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Pension/2.jpg"
+                                                        alt="DogStar Pension img">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Pension/3.jpg"
+                                                        alt="DogStar Pension img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p class="text-center mt-0"><strong>Para más info llamar al <br> +52 55 6445
+                                            8079</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL END -->
+                </div>
+                <!-- SERVICE 2 -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5 h-75">
+                        <div class="mb-2"><i class="bi bi-suit-heart fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Guardería</h3>
+                        <p class="text-muted mb-0">Excelente para cuando no estás en casa durante el día, déjalo en una
+                            casa como la tuya.</p>
+                    </div>
+                    <!-- MODAL BUTTON -->
+                    <button type="button" class="btn btn-primary services" data-toggle="modal" data-target="#careModal">
+                        Saber más
+                    </button>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="careModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Guardería Canina</h5>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <img src="./assets/LogoMod.png" class="img-fluid" alt="DogStar Logo">
+                                        <div class="row">
+                                            <div class=" lead ml-auto ">
+                                                <h2 class="orng">Deja que tu mejor amigo <span class="blue">se divierta
+                                                        jugando.</span> </h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="ml-auto mt-3">
+                                                <p class="text-center mt-0">Te recomendamos que venga a la guardería
+                                                    para perros si quieres que
+                                                    se divierta <strong> jugando </strong>con otros perros y aprenda a
+                                                    <strong>socializar</strong>.</p>
+                                                <p class="text-center mt-0">El principal beneficio de este programa de
+                                                    guardería es tener un
+                                                    perro <strong> tranquilo, menos ansioso y por lo tanto menos
+                                                        problemático </strong>pues la mayoría de problemas de hábitos
+                                                    (perro destructor, perro escandaloso) tienen que ver con la falta de
+                                                    actividad que les genera ansiedad.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mt-5">
+                                                <div class="row">
+                                                    <div class="col-8 col-sm-6">
+                                                        <div>
+                                                            <h4 class="orng">Requisitos:</h4>
+                                                            <ul class="list-unstyled mb-4">
+                                                                <li>Mínimo 4 meses de edad</li>
+                                                                <li>Cartilla de vacunación vigente</li>
+                                                                <li>Desparasitación</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 col-sm-6">
+                                                        <div>
+                                                            <h4 class="orng">Horarios:</h4>
+                                                            <ul class="list-unstyled mb-4">
+                                                                <li><span class="blue"> Lunes a Viernes</span> de 7am a
+                                                                    9pm.</li>
+                                                                <li><span class="blue"> Sabados</span> de 9am a 6pm.
+                                                                </li>
+                                                                <li><span class="blue"> Domingos</span> de 10am a 3pm.
+                                                                </li>
+                                                            </ul>
+                                                            <br class="mt-3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="galeriaModal list-unstyled d-flex justify-content-center">
+                                                <li><img class="img-fluid" src="./assets/img/Guarderia/1.jpg"
+                                                        alt="Guarderia DogStar img">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Guarderia/2.jpg"
+                                                        alt="Guarderia DogStar img">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Guarderia/3.jpg"
+                                                        alt="Guarderia DogStar img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p><strong>Para más info llamar al <br> +52 55 6445 8079</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL END -->
+                </div>
+                <!-- SERVICE 3 -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5 h-75">
+                        <div class="mb-2"><i class="bi bi-scissors fs-1 text-primary"></i></i></div>
+                        <h3 class="h4 mb-2">Estetica</h3>
+                        <p class="text-muted mb-0">Baño con su shampoo favorito, corte de pelo, corte de uñas y más.</p>
+                    </div>
+                    <!-- MODAL BUTTON -->
+                    <button type="button" class="btn btn-primary services" data-toggle="modal"
+                        data-target="#estheticModal">
+                        Saber más
+                    </button>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="estheticModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Estetica Canina</h5>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <img src="./assets/LogoMod.png" class="img-fluid" alt="DogStar Logo">
+                                        <div class="row">
+                                            <div class=" lead ml-auto ">
+                                                <h2 class="blue">¡Siempre <span class="orng"> fashion!</span></h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="ml-auto mt-3">
+                                                <p class="float-none">Nuestro objetivo es que la experiencia de baño
+                                                    para tu perro sea
+                                                    siempre la mejor! <br>
+                                                    Contamos con estilistas y bañadores altamente calificados para hacer
+                                                    del baño una experiencia relajante.</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mt-5">
+                                                <h3 class="orng">Baño Canino</h3>
+                                                <div>
+                                                    <ul class="mb-4 pl-lg-5 list-unstyled">
+                                                        <li><strong>Agua a la temperatura perfecta</strong> para tu
+                                                            perruno</li>
+                                                        <li><strong>Shampoo y acondicionadores </strong>diseñados para
+                                                            el correcto cuidado de la piel y pelaje de los peludos.</li>
+
+                                                        <li><strong>Cepillado de dientes </strong>(por higiene, los
+                                                            productos usados para este proceso
+                                                            son personales y se adquieren por separado).</li>
+                                                        <li>Spray dental y para el icónico toque final: <strong>a
+                                                                elección moño o paliacate.</strong></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="galeriaModal list-unstyled d-flex justify-content-center">
+                                                <li><img class="img-fluid" src="./assets/img/Estetica/1.jpg"
+                                                        alt="Estetica Canina DogStar Logo">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Estetica/3.jpg"
+                                                        alt="Estetica Canina DogStar Logo">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Estetica/2.jfif"
+                                                        alt="Estetica Canina DogStar Logo">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <p><strong>Para más info llamar al <br> +52 55 6445 8079</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL END -->
+                </div>
+                <!-- SERVICE 4 -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5 h-75">
+                        <div class="mb-2"><i class="bi bi-trophy fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Adiestramiento</h3>
+                        <p class="text-muted mb-0">Compra los mejores productos para mantener a tu perrito feliz.</p>
+                    </div>
+                    <!-- MODAL BUTTON -->
+                    <button type="button" class="btn btn-primary services" data-toggle="modal" data-target="#eduModal">
+                        Saber más
+                    </button>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="eduModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Adiestramiento Canino</h5>
+                                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <img src="./assets/LogoMod.png" class="img-fluid" alt="DogStar Logo">
+                                        <div class="row">
+
+                                            <div class=" lead ml-auto ">
+                                                <h2>¿Te gustaría que tu perro responda positivamente a tus órdenes e
+                                                    indicaciones?</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="ml-auto mt-3 ">
+                                                <p class="float-none">Con los cursos de <span
+                                                        class="blue">ADIESTRAMIENTO CANINO
+                                                    </span>disfrutarás de un perro,
+                                                    <strong> alegre, obediente y sociable.</strong> <br> Aprenderás a
+                                                    comunicarle lo que
+                                                    quieras, en un lenguaje que él comprenda.</p>
+                                                <p class="float-none">Si bien es cierto que los perros son fascinantes y
+                                                    no
+                                                    necesitan que se les fomente la inteligencia o la moral para
+                                                    hacerles un lugar en la familia, también es muy cierto que cuando
+                                                    los adiestramos logramos que encajen en nuestra sociedad <strong>
+                                                        sin cambiar
+                                                        su naturaleza.</strong></p>
+                                                <br><strong> Un perro educado es un perro feliz!</strong>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="mt-5">
+                                                <h3>Niveles</h3>
+                                                <div class="row">
+                                                    <div class="col-8 col-sm-6">
+                                                        <div>
+
+                                                            <h4 class="orng">Básico</h4>
+                                                            <p class="float-none">Tu perro aprenderá ejercicios de
+                                                                obediencia dentro de la
+                                                                escuela y con correa, a socializar con otros perros y
+                                                                reducirá su ansiedad.</p>
+                                                            <p class="float-none"> Tú aprenderás a comunicarte con tu
+                                                                perro con
+                                                                herramientas como el clicker y el refuerzo positivo,
+                                                                además aprenderás a condicionarlo a hacer sus
+                                                                necesidades en el lugar indicado.</p>
+                                                        </div>
+
+                                                        <h6 class="blue">Duración:</h6>
+                                                        <p class="float-none">4 semanas</p>
+                                                        <h6 class="blue">Requisitos:</h6>
+                                                        <ul class="list-unstyled mb-4">
+                                                            <li>Mínimo 4 meses de edad</li>
+                                                            <li>Cartilla de vacunación vigente</li>
+                                                            <li>Desparasitación</li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="col-4 col-sm-6">
+                                                        <div class="h-50">
+                                                            <h4 class="orng float-none">Avanzado</h4>
+                                                            <p class="float-none">Tu perro reforzará todo lo aprendido
+                                                                en el curso
+                                                                anterior, pero ahora se incluirán prácticas en la calle,
+                                                                lo que implica un mayor reto porque habrá nuevos
+                                                                distractores.</p>
+                                                            <br class="mt-3">
+                                                        </div>
+                                                        <h6 class="blue">Duración:</h6>
+                                                        <p class="float-none">4 semanas</p>
+                                                        <h6 class="blue">Requisitos:</h6>
+                                                        <ul class="list-unstyled mb-2">
+                                                            <li>Mínimo 4 meses de edad</li>
+                                                            <li>Cartilla de vacunación vigente</li>
+                                                            <li>Desparasitación</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="galeriaModal list-unstyled d-flex justify-content-center">
+                                                <li><img class="img-fluid" src="./assets/img/Adiestramiento/1.jpg"
+                                                        alt="Foto Adiestramiento DogStar">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Adiestramiento/2.jpeg"
+                                                        alt="Foto Adiestramiento DogStar">
+                                                </li>
+                                                <li><img class="img-fluid" src="./assets/img/Adiestramiento/3.jpg"
+                                                        alt="Foto Adiestramiento DogStar">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="./pages/trainingService.html"><button type="button"
+                                            class="btn btn-adquirir">Adquirir</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL END -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY DOG INFO SEARCH-->
+    <section id="dogsInfo" class="page-section bg-primary">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">¿Quieres conocer más sobre tu compañero?</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4 h5">
+                        Conoce las características sobre cada tipo de <strong>raza de perro:</strong>
+                        perros pequeños, tranquilos, nerviosos, guardianes, juguetones, etc. <br> ¡Infórmate!</p>
+                    <div>
+                        <a class="btn btn-light" href="./pages/breedsInfo.html" role="button">click aquí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERY -->
+    <div id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Servicios</div>
+                            <div class="project-name">Estetica Canina</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">Adiestramiento <br> Canino</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">Adiestramiento <br> Canino</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">SERVICIOS</div>
+                            <div class="project-name">Pension</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">Adiestramiento <br> Canino</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Star Dog">
+                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg"
+                            alt="Foto DogStar Servicios" />
+                        <div class="portfolio-box-caption p-3">
+                            <div class="project-category text-white-50">Servicios</div>
+                            <div class="project-name">Estetica Canina</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CONTACT INFO -->
+    <section id="contact" class="mt-5">
+        <h2 class="text-center mt-xxl-5 mb-xxl-5">Ven a visitarnos!</h2>
+        <hr class="divider" />
+        <div class="text-center">
+            <h4><strong> Horarios:</strong></h4>
+            <ul class="list-unstyled mb-4">
+                <li><span class="blue"> Lunes a Viernes</span> de 7am a 9pm.</li>
+                <li><span class="blue"> Sabados</span> de 9am a 6pm.</li>
+                <li><span class="blue"> Domingos</span> de 10am a 3pm. </li>
+            </ul>
+        </div>
+        <div class="text-center mt-5 grid">
+            <i class="bi bi-geo-alt orng text-center"></i>
+            <p class="text-center">Hernán Cortes 160, Lomas de Chapultepec, Miguel Hidalgo, 11100 Ciudad de México, CDMX
+            </p>
+        </div>
+        <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9369093587197!2d-99.21476628475503!3d19.415131746269203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20192d0e33d09%3A0x679a2bad1284ae9f!2sHern%C3%A1n%20Cortes%20160%2C%20Lomas%20de%20Chapultepec%2C%20Miguel%20Hidalgo%2C%2011100%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1644707482723!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+
+    <!-- FOOTER-->
+    <footer class="bg-light py-5 text-center">
+        <div class="container px-4 px-lg-5">
+            <a href="https://web.whatsapp.com" target="_blank" class="h4 m-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="http://facebook.com" target="_blank" class="h4 m-2"><i class="bi bi-facebook"></i></a>
+            <a href="http://instagram.com" target="_blank" class="h4 m-2"><i class="bi bi-instagram"></i></a>
+            <div class="small text-center text-muted m-3">+52 55 6445 8079</div>
+            <div class="small text-center text-muted">Copyright &copy; 2022 - DogStar</div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- MY JS-->
+    <script src="js/main.js"></script>
+    <!-- OTHERS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

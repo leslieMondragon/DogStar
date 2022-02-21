@@ -1,0 +1,24 @@
+
+@import "bgImg";
+@import "buttons";
+@import "register";
+@import "hideElements";
+@import "shop";
+@import "pay";
+@import "load";
+@import "breedsApi";
+@import "responsive";
+
+
+.centerContent{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}

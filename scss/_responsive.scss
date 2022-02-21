@@ -1,0 +1,110 @@
+@media (max-width: 575.98px) {
+    .masthead {
+        padding-top: 2rem;
+    }
+
+    .fixed-top {
+        position: sticky;
+    }
+
+    #logoNav {
+        display: none;
+    }
+
+    .navbar>.container {
+        justify-content: center;
+    }
+
+    .container-fluid {
+        text-align: left;
+        font-size: 0.9rem;
+
+        .col-8 {
+            width: auto;
+        }
+    }
+
+    .col-4 {
+        width: auto;
+        font-size: 13px;
+    }
+
+    .h-50 {
+        height: auto;
+    }
+
+    .itemDescription {
+        font-size: 1.1rem !important;
+    }
+
+    .cartola {
+        margin: 2rem !important;
+    }
+
+    .imageContainer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        height: auto !important;
+    }
+
+    .imageContainer img {
+        height: 200px !important;
+        width: auto !important;
+    }
+
+    #payBody {
+        overflow: auto;
+    }
+
+    #wrapper {
+        margin: 5% 3% 15%;
+        width: 95vw;
+    }
+
+    .row:nth-of-type(3) .col-xs-5 {
+        flex-basis: 95%;
+    }
+
+    .red {
+        border-bottom: 2px solid #c0392b;
+        text-shadow: 0px -1px #c0392b;
+    }
+
+    .action-button {
+        cursor: pointer;
+        height: 45px;
+        position: relative;
+        padding: 2px 15px;
+        border-radius: 5.5px;
+        font-size: 16px;
+    }
+
+    .tabla {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    th,
+    td,
+    tr {
+        padding: .4rem 8px;
+    }
+
+    // BACKGROUNDS
+    .indexBg {
+        background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/bg/bg-masthead-phone.jpg");
+    }
+
+    .shopBg {
+        background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/bg/bg-masthead2-phone.jpg");
+    }
+
+    .registerBg {
+        background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('../assets/bg/formbg-phone.jpg') no-repeat center center fixed;
+    }
+
+    .payBg {
+        background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('../assets/bg/pawBg-phone.jpg') no-repeat center center fixed;
+    }
+}

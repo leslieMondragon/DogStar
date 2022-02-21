@@ -1,0 +1,174 @@
+@import "colors";
+/* TIENDA */
+/* DESDE AQUI EMPIEZA LA SECCIÓN DEL CARRITO */
+.calcTable {
+  display: flex;
+  justify-content: center;
+}
+
+.tabla {
+  width: 80%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: white;
+  margin-bottom: 2rem;
+  empty-cells: hide;
+  border-radius: 10px;
+}
+
+.titulo-tabla {
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+.border-top-left {
+  border-top-left-radius: 10px;
+}
+
+.border-top-right {
+  border-top-right-radius: 10px;
+}
+
+.border-bottom-right {
+  border-bottom-right-radius: 10px;
+}
+
+.border-bottom-left {
+  border-bottom-left-radius: 10px;
+}
+
+th {
+  font-size: 1rem;
+
+}
+
+th,
+td,
+tr {
+  border: var(--border-table);
+  text-align: center;
+  padding: .4rem 0;
+}
+
+td {
+  background: #ffffffb8;
+  color: black;
+}
+
+.tablePrices::before {
+  content: 'MX$';
+  padding-right: 0.4rem;
+}
+
+.button {
+  border: var(--border-table);
+  background: #f4623a;
+  width: 20px;
+  color: white;
+  margin: 8px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+
+.none {
+  background: transparent;
+  border: none;
+}
+
+
+/* PRODUCTS */
+.cartola {
+  border-radius: 0.35rem;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 0px 1rem hsla(240, 100%, 90%, 0.3);
+  transition: transform 0.1s;
+  overflow: hidden;
+  margin: 1rem;
+  width: 335px;
+}
+
+.cartola:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  box-shadow: 0 0 2rem hsla(240, 100%, 90%, 0.5);
+}
+
+/* IMAGES */
+.imageContainer {
+  height: 310px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+/* NAME AND ITEM DESCRIPTION */
+.div-info {
+  flex: 1;
+  border-bottom: var(--border);
+  overflow: hidden;
+}
+
+.itemName {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.2rem 0;
+}
+
+.divider {
+  width: 80%;
+  margin: auto;
+  border: none;
+  border-top: var(--border);
+}
+
+.itemDescription {
+  height: 150px;
+  text-align: center;
+  margin: 0;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  overflow: hidden;
+  opacity: .7;
+}
+
+/* PRICE AND BUTTON ADD */
+.divPriceButton {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+}
+
+.price {
+  margin: 0 .5em;
+  font-size: medium;
+  color: #842029;
+  text-align: center;
+}
+
+.price::before {
+  content: 'MX$';
+  padding-right: 0.3rem;
+}
+
+
+.cart {
+  width: 18px;
+}
+.cartHdr{
+  background-color: #0fbfc2a9;
+}
+/* PRODUCT CONTAINER */
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+

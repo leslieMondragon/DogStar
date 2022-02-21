@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  <!-- Bootstrap Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <title>DogStar | Pay Page</title>
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="payBody" class="payBg">
+  <div id="wrapper">
+    <div class="row">
+      <div class="col-xs-5">
+        <div id="cards">
+          <img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png">
+          <img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-icon.png">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for='card'>
+            <input type="radio" name='payCard' id="card">
+            Pagar con Tarjeta de crédito
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-5">
+        <div id="cards">
+          <img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Paypal-icon.png">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for='paypal'>
+            <input type="radio" name='payCard' id="paypal">
+            Pagar con PayPal
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-5">
+        <i class="fa fa fa-user"></i>
+        <label for="cardholder">Nombre</label>
+        <input type="text" id="cardholder">
+      </div>
+      <div class="col-xs-5">
+        <i class="fa fa-credit-card-alt"></i>
+        <label for="cardnumber">No. Cuenta</label>
+        <input type="text" id="cardnumber">
+      </div>
+    </div>
+    <div class="row row-three">
+      <div class="col-xs-2">
+        <i class="fa fa-calendar"></i>
+        <label for="date">Vigencia</label>
+        <input type="text" placeholder="MM/YY" id="date">
+      </div>
+      <div class="col-xs-2">
+        <i class="fa fa-lock"></i>
+        <label for="date">CVV / CVC *</label>
+        <input type="text" placeholder="***" id="cvv">
+      </div>
+      <div class="col-xs-5">
+        <span class="small">* El código CVV o CVC es un grupo de 3 números situado en el reverso de la tarjeta de
+          crédito.</span>
+      </div>
+    </div>
+    <section class="payFooter">
+      <a class="btn back" href="./shop.html">Volver</a>
+      <button class="btn next" id="next">Siguente</buton>
+    </section>
+  </div>
+  <!-- LOAD -->
+  <div class="load" id="load">
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+  </div>
+  <!-- FOOTER-->
+  <footer class="footerPay py-2 text-center">
+    <div class="container px-2 px-lg-2">
+      <a href="https://web.whatsapp.com" target="_blank" class="orangeT m-2"><i class="bi bi-whatsapp"></i></a>
+      <a href="http://facebook.com" target="_blank" class="orangeT m-2"><i class="bi bi-facebook"></i></a>
+      <a href="http://instagram.com" target="_blank" class="orangeT m-2"><i class="bi bi-instagram"></i></a>
+      <div class="small text-center text-muted m-3">+52 55 6445 8079</div>
+      <div class="small text-center text-muted">Copyright &copy; 2022 - DogStar</div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/loadPayment.js"></script>
+</body>
+
+</html>
