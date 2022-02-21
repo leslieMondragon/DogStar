@@ -1,5 +1,5 @@
-![Alt StarDog](assets/Imagen1.PNG)
-#            STARDOG  |   ADIESTRAMIENTO CANINO
+
+# STARDOG  |   ADIESTRAMIENTO CANINO
 Proyecto presentado para el curso de JavaScript impartido por "CoderHouse".
 
 ## Concepto
@@ -16,11 +16,8 @@ De acuerdo a la idea principal del proyecto:
 
 ### Leslie Ximena Mondragón Gómez
 ![Alt StarDog](/assets/DogStar.PNG)
+
 #### Instruido por:
 * Profesor: Cesar Ramírez
 * Tutor: Luis Gonzalez
 
-
-
-
-If you want to learn all about markdown i recommend you visit the site [markdown.es](https://markdown.es/sintaxis-markdown/)
