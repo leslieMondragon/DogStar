@@ -1,4 +1,4 @@
-
+![Alt StarDogLogo](/assets/LogoMod.png)
 # STARDOG  |   ADIESTRAMIENTO CANINO
 Proyecto presentado para el curso de JavaScript impartido por "CoderHouse".
 
